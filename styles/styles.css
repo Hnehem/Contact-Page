@@ -166,4 +166,8 @@ label {
   .input-div {
     width: 100%;
   }
+
+  .heading h1, .heading p {
+    white-space: unset;
+  }
 }
