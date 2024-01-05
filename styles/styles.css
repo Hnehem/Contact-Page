@@ -11,15 +11,9 @@ body {
   font-family: "Be Vietnam Pro", sans-serif;
   font-size: 16px;
   padding: 1rem 2rem;
-  background: linear-gradient(
-    135deg,
-    #a70252 8%,
-    #802ea5 35%,
-    #6604b0,
-    #6b04b9,
-    #4036a9,
-    #693af7
-  );
+  background-image: url('../img/bg-image.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,7 +62,7 @@ label {
 }
 
 .form {
-  width: 54.54rem;
+  width: 49rem;
   padding: 2rem;
   background: #cdd5e050;
   border-radius: 1rem;
@@ -82,6 +76,15 @@ label {
   display: flex;
   flex-direction: column;
 }
+
+.input-div > select {
+  appearance: none;
+  background-image: url('../img/Expand_down.svg');
+  background-position: 95% center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
 .input-div input,
 .input-div select {
   width: 100%;
@@ -135,7 +138,7 @@ label {
   color: #4036a9;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1020px) {
   body {
     padding: 2rem;
   }
@@ -149,7 +152,7 @@ label {
   }
 
   .heading p {
-    font-size: 1rem;
+    font-size: 1.18rem;
   }
 
   .form {
